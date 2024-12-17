@@ -1,0 +1,21 @@
+﻿<form asp-action="Authenticate" method="post"
+      style="display: flex; flex-direction: column; align-items: center; justify-content: center;
+             width: 300px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px;
+             background-color: #f9f9f9;">
+
+    <label for="username" style="font-size: 1.1em; margin-bottom: 8px;">Kullanıcı Adı:</label>
+    <input type="text" name="username" id="username" required
+           style="padding: 8px; font-size: 1em; margin-bottom: 15px; width: 100%; border-radius: 5px; border: 1px solid #ccc;" />
+
+    <label for="password" style="font-size: 1.1em; margin-bottom: 8px;">Şifre:</label>
+    <input type="password" name="password" id="password" required
+           style="padding: 8px; font-size: 1em; margin-bottom: 15px; width: 100%; border-radius: 5px; border: 1px solid #ccc;" />
+
+    <button type="submit"
+            style="padding: 10px 20px; font-size: 1.1em; background-color: #007bff; color: white; border: none;
+                 border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        Giriş Yap
+    </button>
+
+    <p style="color: red; margin-top: 15px;">@ViewBag.ErrorMessage</p>
+</form>
